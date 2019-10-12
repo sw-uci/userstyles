@@ -1,0 +1,91 @@
+#mw-panel:nth-child(3) {
+    /* add space for search bar */
+    width: 11em;
+    margin-top: 44px;
+}
+#p-search {
+    /* move search bar to left top, fixed */
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+}
+#simpleSearch {
+    width: 10em;
+    z-index: 100;
+}
+#mw-page-base {
+    /* remove header area */
+    display: none;
+}
+#mw-head {
+    /* resize header so that things that otherwise would have been
+       covered by it can now be interacted with */
+    width: 11em;
+}
+#p-personal,
+#left-navigation,
+#p-views {
+    /* hide left header buttons, right header buttons */
+    display: none
+}
+.mw-editsection {
+    /* hide edit buttons */
+    display: none;
+}
+#siteSub {
+    /* From Wikipedia, the free encyclopedia */
+    opacity: 0.4;
+}
+#mw-panel:hover {
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    background: #f6f6f6;
+    height: auto;
+}
+#mw-panel {
+    /* hide original left sidebar until hovered */
+    overflow: hidden;
+    padding: 0;
+    top: 0;
+    height: 5px;
+    background: #a2a9b1;
+    z-index: 100;
+    position: fixed;
+}
+#toc:hover {
+    max-width: 100%;
+    transition: max-width .15s ease-in-out;
+    overflow-y: auto;
+    background: rgba(246, 246, 246, 0.85);
+}
+#toc {
+    /* fix toc to the left sidebar, clip text until hovered */
+    position: fixed;
+    overflow: hidden;
+    left: 0;
+    top: 48px;
+    bottom: 0;
+    white-space: nowrap;
+    /* keep text on one line each */
+    max-width: 12em;
+    min-width: 12em;
+    transition: max-width .15s ease-in-out;
+}
+.toc {
+    /* remove display: table so clipping to window height works */
+    display: block;
+}
+.toctogglespan {
+    /* hide Contents[show/hide] toggle */
+    display: none;
+}
+.mw-body {
+    /* disable responsive width */
+    margin-left: 11em;
+}
+#footer {
+    margin-left: 11em;
+}
